@@ -9,6 +9,7 @@ using namespace modeles;
 EPARGNE::EPARGNE():COMPTE()
 {
     //ctor
+    dateFinB = new DATE();
 }
 
 EPARGNE::~EPARGNE()
@@ -18,7 +19,7 @@ EPARGNE::~EPARGNE()
 string EPARGNE::toString()
 {
     stringstream a;
-    a << COMPTE::toString() << "\t\tTAUX          : " << taux << "\n" ;
+    a << COMPTE::toString() << "\t\tTAUX          : " << taux << "\n" << "\t\tDATE FIN BL   : " << dateFinB->affiche() ;
     return a.str();
 }
 

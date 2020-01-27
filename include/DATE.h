@@ -1,6 +1,8 @@
 #ifndef DATE_H
 #define DATE_H
+#include<iostream>
 
+using namespace std;
 
 namespace modeles
 {
@@ -18,7 +20,7 @@ namespace modeles
             void Setaa(int val) { aa = val; }
 
             void saisie();
-            void affiche();
+            string affiche();
         protected:
 
         private:

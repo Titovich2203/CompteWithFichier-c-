@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
-1580057390 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
+1580087573 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
 	<iostream>
 	"views.h"
+	<SERVICES.h>
+	<vector>
 
 1579551790 source:d:\cours l3gl\c++\projets\comptefichier\src\cheque.cpp
 	"CHEQUE.h"
@@ -24,7 +26,7 @@
 	<sstream>
 	<cstdlib>
 
-1580056207 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
+1580086199 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
 	"EPARGNE.h"
 	"COMPTE.h"
 	"DATE.h"
@@ -42,14 +44,45 @@
 	"COMPTE.h"
 	<DATE.h>
 
-1579547284 d:\cours l3gl\c++\projets\comptefichier\include\date.h
-
-1579550875 source:d:\cours l3gl\c++\projets\comptefichier\src\date.cpp
-	"DATE.h"
+1580087918 d:\cours l3gl\c++\projets\comptefichier\include\date.h
 	<iostream>
 
-1580057270 d:\cours l3gl\c++\projets\comptefichier\views.h
+1580087961 source:d:\cours l3gl\c++\projets\comptefichier\src\date.cpp
+	"DATE.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	<sstream>
+
+1580084596 d:\cours l3gl\c++\projets\comptefichier\views.h
 	<iostream>
 	<string>
 	<cstdlib>
+
+1580059353 source:d:\cours l3gl\c++\projets\comptefichier\src\fichier.cpp
+	"FICHIER.h"
+	<iostream>
+	<fstream>
+
+1580059369 d:\cours l3gl\c++\projets\comptefichier\include\fichier.h
+	<string>
+	<vector>
+	<COMPTE.h>
+	<TRANSACTION.h>
+
+1580086752 d:\cours l3gl\c++\projets\comptefichier\include\services.h
+	<COMPTE.h>
+	<TRANSACTION.h>
+	<vector>
+
+1580087705 source:d:\cours l3gl\c++\projets\comptefichier\src\services.cpp
+	"SERVICES.h"
+	<COMPTE.h>
+	<EPARGNE.h>
+	<CHEQUE.h>
+	<iostream>
+	<cstdlib>
+	<string>
+	<sstream>
+	<vector>
 

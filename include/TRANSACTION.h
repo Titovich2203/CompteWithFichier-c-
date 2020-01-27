@@ -22,6 +22,7 @@ namespace modeles
             void Setmnt(double val) { mnt = val; }
             int Gettype() { return type; }
             void Settype(int val) { type = val; }
+            string toString();
 
         protected:
 

@@ -62,7 +62,7 @@ namespace views
         cout  << "\n\n\t\t\tMENU TRANSACTION \n\n" << endl;
         cout << "\n\t\t1-----------                 NEW TRANSACTION \n" << endl;
         cout << "\t\t2-----------                 LISTE DES TRANSACTIONS \n" << endl;
-        cout << "\t\t3-----------                 LISTE DES TRANSACTIONS PAR COMPTE \n" << endl;
+        cout << "\t\t3-----------                 LISTE DES TRANSACTIONS POUR UN COMPTE \n" << endl;
         cout << "\t\t4-----------                 RETOUR \n" << endl;
         cout << "\t\t5-----------                 QUITTER \n" << endl;
         do

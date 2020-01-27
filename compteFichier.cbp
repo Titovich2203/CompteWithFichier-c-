@@ -38,13 +38,18 @@
 		<Unit filename="include/COMPTE.h" />
 		<Unit filename="include/DATE.h" />
 		<Unit filename="include/EPARGNE.h" />
+		<Unit filename="include/FICHIER.h" />
+		<Unit filename="include/SERVICES.h" />
 		<Unit filename="include/TRANSACTION.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CHEQUE.cpp" />
 		<Unit filename="src/COMPTE.cpp" />
 		<Unit filename="src/DATE.cpp" />
 		<Unit filename="src/EPARGNE.cpp" />
+		<Unit filename="src/FICHIER.cpp" />
+		<Unit filename="src/SERVICES.cpp" />
 		<Unit filename="src/TRANSACTION.cpp" />
+		<Unit filename="views.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
