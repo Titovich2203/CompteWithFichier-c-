@@ -26,7 +26,7 @@
 	<sstream>
 	<cstdlib>
 
-1580086199 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
+1580088108 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
 	"EPARGNE.h"
 	"COMPTE.h"
 	"DATE.h"
@@ -37,10 +37,13 @@
 	<COMPTE.h>
 	<DATE.h>
 
-1579551094 source:d:\cours l3gl\c++\projets\comptefichier\src\transaction.cpp
+1580089018 source:d:\cours l3gl\c++\projets\comptefichier\src\transaction.cpp
 	"TRANSACTION.h"
+	<iostream>
+	<ctime>
+	<DATE.h>
 
-1580058195 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
+1580088603 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
 	"COMPTE.h"
 	<DATE.h>
 

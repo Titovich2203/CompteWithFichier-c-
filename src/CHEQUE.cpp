@@ -50,5 +50,8 @@ int CHEQUE::verser(double mnt)
 
 int CHEQUE::virement(double mnt, COMPTE* cp)
 {
-
+    if(CHEQUE::retirer(mnt)== 1){
+      return cp->verser(mnt);
+    }
+    return 0;
 }

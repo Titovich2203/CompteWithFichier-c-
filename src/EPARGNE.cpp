@@ -118,6 +118,10 @@ int EPARGNE::verser(double mnt)
 
 int EPARGNE::virement(double mnt, COMPTE* cp)
 {
-
+    if(EPARGNE::retirer(mnt)== 1)
+    {
+        return cp->verser(mnt);
+    }
+    return 0;
 }
 
