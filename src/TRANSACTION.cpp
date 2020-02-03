@@ -1,8 +1,11 @@
 #include "TRANSACTION.h"
 #include<iostream>
+#include<string>
+#include<sstream>
 #include<ctime>
 #include<DATE.h>
 
+using namespace std;
 using namespace modeles;
 
 unsigned int TRANSACTION::cpt = 0;
@@ -30,5 +33,15 @@ TRANSACTION::~TRANSACTION()
 }
 string TRANSACTION::toString()
 {
+    stringstream a;
+    a << "\t\tID            : " << id << "\n" << "\t\tDATE          : " << date->affiche() << "\n" << "\t\tMNT           : " << mnt << "\n" << "\t\tTYPE          : " << getTypestring() << "\n" ;
+    return a.str();
+}
 
+string TRANSACTION::getTypestring()
+{
+    if(type == VERSEMENT) return "VERSEMENT";
+    if(type == RETRAIT) return "RETRAIT";
+    if(type == VIREMENT) return "VIREMENT";
+    return "";
 }

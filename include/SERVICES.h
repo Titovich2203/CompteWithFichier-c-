@@ -23,10 +23,12 @@ namespace services
             void allTransaction(vector<COMPTE*>);
             void transByCompte(vector<COMPTE*>);
 
+            vector<COMPTE*> loadComptes();
         protected:
 
         private:
             COMPTE* searchCompte(string num, vector<COMPTE*> comptes);
+            void updateVector(vector<COMPTE*> *comptes, COMPTE * cp);
     };
 };
 

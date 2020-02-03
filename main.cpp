@@ -12,7 +12,7 @@ int main()
 {
     int choix, choix1;
     SERVICES *SR = new SERVICES();
-    vector<COMPTE*> comptes;
+    vector<COMPTE*> comptes = SR->loadComptes();
 
 
     system("color 3f");
@@ -57,10 +57,10 @@ int main()
                             SR->newTransaction(&comptes);
                             break;
                         case 2:
-
+                            SR->allTransaction(comptes);
                             break;
                         case 3:
-
+                            SR->transByCompte(comptes);
                             break;
                         case 5:
                             exit(EXIT_FAILURE);

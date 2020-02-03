@@ -111,7 +111,7 @@ int EPARGNE::retirer(double mnt)
 int EPARGNE::verser(double mnt)
 {
     int valeur;
-    valeur = mnt + (mnt * taux);
+    valeur = mnt + ((mnt * taux) / 100);
     solde += valeur;
     return 1;
 }

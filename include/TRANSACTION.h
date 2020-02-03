@@ -5,6 +5,10 @@
 
 namespace modeles
 {
+    typedef enum
+    {
+        VERSEMENT = 1, RETRAIT, VIREMENT
+    }TYPE_TRANS;
     class TRANSACTION
     {
         public:
@@ -20,8 +24,11 @@ namespace modeles
             double Getmnt() { return mnt; }
             void Setmnt(double val) { mnt = val; }
             int Gettype() { return type; }
+            void SetnumCompte(string val) { numCompte = val; }
+            string GetnumCompte() { return numCompte; }
             void Settype(int val) { type = val; }
             string toString();
+            string getTypestring();
 
         protected:
 
@@ -31,6 +38,7 @@ namespace modeles
             DATE* date;
             double mnt;
             int type;
+            string numCompte;
     };
 };
 

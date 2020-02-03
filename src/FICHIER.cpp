@@ -42,6 +42,29 @@ int FICHIER::addCompte(COMPTE* p)
     return 0;
 }
 
+int FICHIER::addAllCompte(vector<COMPTE*> p)
+{
+    int i;
+    ofstream fluxCompte(nomFC.c_str());
+    if(fluxCompte)
+    {
+        for(i=0; i<p.size(); i++)
+        {
+            if(p.at(i)->isCheque()==0)
+            {
+                EPARGNE * e = (dynamic_cast<EPARGNE*>(p.at(i)));
+                fluxCompte<<e->Getid()<<"|"<<e->Getnum()<<"|"<<e->Getsolde()<<"|"<<e->isCheque()<<"|"<<e->Gettaux()<<"|"<<e->Getdate()->Getjj()<<"|"<<e->Getdate()->Getmm()<<"|"<<e->Getdate()->Getaa()<<endl;
+            }else
+            {
+                CHEQUE * ch = (dynamic_cast<CHEQUE*>(p.at(i)));
+                fluxCompte<<ch->Getid()<<"|"<<ch->Getnum()<<"|"<<ch->Getsolde()<<"|"<<ch->isCheque()<<"|"<<ch->Getinteret()<<endl;
+            }
+        }
+        return 1;
+    }
+    return 0;
+}
+
 vector<string> explode( const string &delimiter, const string &str)
 {
     vector<string> arr;
@@ -154,12 +177,12 @@ vector<COMPTE*> FICHIER::getAllComptes()
     return vectCompte;
 }
 
-int FICHIER::addTransaction(TRANSACTION* t)
+int FICHIER::addTransaction(TRANSACTION* t, string numCompte)
 {
     ofstream fluxTr(nomFT.c_str(), ios::app);
     if(fluxTr)
     {
-        fluxTr<<t->Getid()<<"|"<<t->Getmnt()<<"|"<<t->Gettype()<<"|"<<t->Getdate()->Getjj()<<"|"<<t->Getdate()->Getmm()<<"|"<<t->Getdate()->Getaa()<<endl;
+        fluxTr<<t->Getid()<<"|"<<t->Getmnt()<<"|"<<t->Gettype()<<"|"<<t->Getdate()->Getjj()<<"|"<<t->Getdate()->Getmm()<<"|"<<t->Getdate()->Getaa()<<"|"<<numCompte<<endl;
         return 1;
     }
     return 0;
@@ -209,6 +232,9 @@ vector<TRANSACTION*> FICHIER::getAllTransactions()
             geek5 >> aa;
             date->Setaa(aa);
             tr->Setdate(date);
+
+
+            tr->SetnumCompte(v[6]);
 
             vectTr.push_back(tr);
         }

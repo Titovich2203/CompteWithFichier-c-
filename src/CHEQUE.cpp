@@ -27,8 +27,8 @@ string CHEQUE::toString()
 
 int CHEQUE::retirer(double mnt)
 {
-    int valeur;
-    valeur = mnt + (mnt * interet);
+    double valeur;
+    valeur = mnt + ((mnt * interet) / 100);
     if(solde >= valeur)
     {
         solde -= valeur;
@@ -43,7 +43,7 @@ int CHEQUE::retirer(double mnt)
 int CHEQUE::verser(double mnt)
 {
     int valeur;
-    valeur = mnt - (mnt * interet);
+    valeur = mnt - ((mnt * interet) / 100);
     solde += valeur;
     return 1;
 }

@@ -22,7 +22,8 @@ namespace modeles
             string GetnomFT() { return nomFT; }
             void SetnomFT(string val) { nomFT = val; }
             int addCompte(COMPTE*);
-            int addTransaction(TRANSACTION*);
+            int addAllCompte(vector<COMPTE*>);
+            int addTransaction(TRANSACTION*, string);
             vector<COMPTE*> getAllComptes();
             vector<TRANSACTION*> getAllTransactions();
 

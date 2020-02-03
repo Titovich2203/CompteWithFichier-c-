@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1580742524 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
+1580751621 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
 	<iostream>
 	"views.h"
 	<SERVICES.h>
 	<vector>
 
-1580090474 source:d:\cours l3gl\c++\projets\comptefichier\src\cheque.cpp
+1580752684 source:d:\cours l3gl\c++\projets\comptefichier\src\cheque.cpp
 	"CHEQUE.h"
 	"COMPTE.h"
 	<iostream>
@@ -28,7 +28,7 @@
 	<sstream>
 	<cstdlib>
 
-1580090435 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
+1580749848 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
 	"EPARGNE.h"
 	"COMPTE.h"
 	"DATE.h"
@@ -39,13 +39,15 @@
 	<COMPTE.h>
 	<DATE.h>
 
-1580089018 source:d:\cours l3gl\c++\projets\comptefichier\src\transaction.cpp
+1580747295 source:d:\cours l3gl\c++\projets\comptefichier\src\transaction.cpp
 	"TRANSACTION.h"
 	<iostream>
+	<string>
+	<sstream>
 	<ctime>
 	<DATE.h>
 
-1580743946 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
+1580750197 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
 	<DATE.h>
 
 1580087918 d:\cours l3gl\c++\projets\comptefichier\include\date.h
@@ -63,7 +65,7 @@
 	<string>
 	<cstdlib>
 
-1580741931 source:d:\cours l3gl\c++\projets\comptefichier\src\fichier.cpp
+1580751903 source:d:\cours l3gl\c++\projets\comptefichier\src\fichier.cpp
 	"FICHIER.h"
 	<iostream>
 	<fstream>
@@ -72,7 +74,7 @@
 	<string>
 	<cstdlib>
 
-1580741958 d:\cours l3gl\c++\projets\comptefichier\include\fichier.h
+1580751766 d:\cours l3gl\c++\projets\comptefichier\include\fichier.h
 	<string>
 	<vector>
 	<COMPTE.h>
@@ -80,16 +82,17 @@
 	"EPARGNE.h"
 	"CHEQUE.h"
 
-1580743649 d:\cours l3gl\c++\projets\comptefichier\include\services.h
+1580750924 d:\cours l3gl\c++\projets\comptefichier\include\services.h
 	<COMPTE.h>
 	<TRANSACTION.h>
 	<vector>
 
-1580742496 source:d:\cours l3gl\c++\projets\comptefichier\src\services.cpp
+1580751980 source:d:\cours l3gl\c++\projets\comptefichier\src\services.cpp
 	"SERVICES.h"
 	<COMPTE.h>
 	<EPARGNE.h>
 	<CHEQUE.h>
+	<FICHIER.h>
 	<iostream>
 	<cstdlib>
 	<string>
