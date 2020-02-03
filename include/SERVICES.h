@@ -4,7 +4,10 @@
 #include<TRANSACTION.h>
 #include<vector>
 
-namespace modeles
+using namespace modeles;
+
+
+namespace services
 {
     class SERVICES
     {
@@ -23,6 +26,7 @@ namespace modeles
         protected:
 
         private:
+            COMPTE* searchCompte(string num, vector<COMPTE*> comptes);
     };
 };
 

@@ -10,6 +10,7 @@
 
 using namespace std;
 using namespace modeles;
+using namespace services;
 
 SERVICES::SERVICES()
 {
@@ -110,7 +111,50 @@ void SERVICES::listCompteCheque(vector<COMPTE*> comptes)
 
 void SERVICES::newTransaction(vector<COMPTE*> *comptes)
 {
+    TRANSACTION *t = new TRANSACTION();
+    COMPTE *cp;
+    int choix;
+    string num;
+    char rep;
 
+     do
+        {
+            cin.ignore();
+            cout << "\n\n\t\tSELECTIONNEZ LE TYE DU NOUVEAU COMPTE " << endl;
+            cout << "\t\t      RETRAIT (R) - VERSEMENT (V)" << endl;
+            cout << "\t\tVOTRE CHOIX : "; cin >> rep;
+        }while(rep != 'R' && rep != 'V');
+
+     cout << "\t\tSAISIR LE NUMERO DU COMPTE" << endl;
+     cin >> num;
+    cp = this->searchCompte(num,(*comptes));
+    if(cp != NULL)
+    {
+        cout << "\t\tSAISIR LE MONTANT A RETIRER" << endl;
+        double mnt;
+        cin >> mnt;
+        t->Setmnt(mnt);
+        if(rep == 'R')
+        {
+            if(cp->isCheque() == 0)
+            {
+                (dynamic_cast<EPARGNE*>(cp))->retirer(t->Getmnt());
+            }
+            else
+            {
+                (dynamic_cast<CHEQUE*>(cp))->retirer(t->Getmnt());
+            }
+        }else{
+            if(cp->isCheque() == 0)
+            {
+                (dynamic_cast<EPARGNE*>(cp))->verser(t->Getmnt());
+            }
+            else
+            {
+                (dynamic_cast<CHEQUE*>(cp))->verser(t->Getmnt());
+            }
+        }
+    }
 }
 
 void SERVICES::allTransaction(vector<COMPTE*> comptes)
@@ -121,4 +165,16 @@ void SERVICES::allTransaction(vector<COMPTE*> comptes)
 void SERVICES::transByCompte(vector<COMPTE*> comptes)
 {
 
+}
+
+COMPTE* SERVICES::searchCompte(string num, vector<COMPTE*> comptes)
+{
+    for(int i=0; i<comptes.size(); i++)
+    {
+        if(comptes[i]->Getnum()==num)
+        {
+            return comptes[i];
+        }
+    }
+    return NULL;
 }

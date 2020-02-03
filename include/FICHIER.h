@@ -4,6 +4,8 @@
 #include<vector>
 #include<COMPTE.h>
 #include<TRANSACTION.h>
+#include"EPARGNE.h"
+#include"CHEQUE.h"
 
 using namespace std;
 
@@ -19,8 +21,8 @@ namespace modeles
             void SetnomFC(string val) { nomFC = val; }
             string GetnomFT() { return nomFT; }
             void SetnomFT(string val) { nomFT = val; }
-            void addCompte(COMPTE*);
-            void addTransaction(TRANSACTION*);
+            int addCompte(COMPTE*);
+            int addTransaction(TRANSACTION*);
             vector<COMPTE*> getAllComptes();
             vector<TRANSACTION*> getAllTransactions();
 

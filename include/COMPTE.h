@@ -1,8 +1,11 @@
 #ifndef COMPTE_H
 #define COMPTE_H
+#include<TRANSACTION.h>
 #include<iostream>
+#include<vector>
 
 using namespace std;
+
 
 namespace modeles
 {
@@ -20,6 +23,8 @@ namespace modeles
             void Setnum(string val) { num = val; }
             double Getsolde() { return solde; }
             void Setsolde(double val) { solde = val; }
+            vector<TRANSACTION*> GetTransactions() { return transactions; }
+            void SetTransactions(vector<TRANSACTION*> val) { transactions = val; }
 
             string genereNumCompte();
             virtual string toString();
@@ -33,6 +38,7 @@ namespace modeles
             unsigned int id;
             string num;
             double solde;
+            vector<TRANSACTION*> transactions;
         private:
             static unsigned int cpt;
     };

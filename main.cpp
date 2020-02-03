@@ -3,6 +3,7 @@
 #include<SERVICES.h>
 #include<vector>
 
+using namespace services;
 using namespace modeles;
 using namespace views;
 using namespace std;
@@ -53,7 +54,7 @@ int main()
                     switch(choix1)
                     {
                         case 1:
-
+                            SR->newTransaction(&comptes);
                             break;
                         case 2:
 

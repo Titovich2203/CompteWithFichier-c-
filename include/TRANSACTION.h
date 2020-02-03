@@ -1,6 +1,5 @@
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
-#include"COMPTE.h"
 #include<DATE.h>
 
 

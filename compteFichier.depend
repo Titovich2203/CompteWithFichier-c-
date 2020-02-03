@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1580087573 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
+1580742524 source:d:\cours l3gl\c++\projets\comptefichier\main.cpp
 	<iostream>
 	"views.h"
 	<SERVICES.h>
 	<vector>
 
-1579551790 source:d:\cours l3gl\c++\projets\comptefichier\src\cheque.cpp
+1580090474 source:d:\cours l3gl\c++\projets\comptefichier\src\cheque.cpp
 	"CHEQUE.h"
 	"COMPTE.h"
 	<iostream>
@@ -13,27 +13,29 @@
 	<sstream>
 	<cstdlib>
 
-1579551545 d:\cours l3gl\c++\projets\comptefichier\include\cheque.h
+1580743644 d:\cours l3gl\c++\projets\comptefichier\include\cheque.h
 	<COMPTE.h>
 
-1579551527 d:\cours l3gl\c++\projets\comptefichier\include\compte.h
+1580743984 d:\cours l3gl\c++\projets\comptefichier\include\compte.h
+	<TRANSACTION.h>
 	<iostream>
+	<vector>
 
-1579551071 source:d:\cours l3gl\c++\projets\comptefichier\src\compte.cpp
+1580743653 source:d:\cours l3gl\c++\projets\comptefichier\src\compte.cpp
 	"COMPTE.h"
 	<iostream>
 	<string>
 	<sstream>
 	<cstdlib>
 
-1580088108 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
+1580090435 source:d:\cours l3gl\c++\projets\comptefichier\src\epargne.cpp
 	"EPARGNE.h"
 	"COMPTE.h"
 	"DATE.h"
 	<ctime>
 	<sstream>
 
-1580052442 d:\cours l3gl\c++\projets\comptefichier\include\epargne.h
+1580743656 d:\cours l3gl\c++\projets\comptefichier\include\epargne.h
 	<COMPTE.h>
 	<DATE.h>
 
@@ -43,8 +45,7 @@
 	<ctime>
 	<DATE.h>
 
-1580088603 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
-	"COMPTE.h"
+1580743946 d:\cours l3gl\c++\projets\comptefichier\include\transaction.h
 	<DATE.h>
 
 1580087918 d:\cours l3gl\c++\projets\comptefichier\include\date.h
@@ -62,23 +63,29 @@
 	<string>
 	<cstdlib>
 
-1580059353 source:d:\cours l3gl\c++\projets\comptefichier\src\fichier.cpp
+1580741931 source:d:\cours l3gl\c++\projets\comptefichier\src\fichier.cpp
 	"FICHIER.h"
 	<iostream>
 	<fstream>
+	<sstream>
+	<stdio.h>
+	<string>
+	<cstdlib>
 
-1580059369 d:\cours l3gl\c++\projets\comptefichier\include\fichier.h
+1580741958 d:\cours l3gl\c++\projets\comptefichier\include\fichier.h
 	<string>
 	<vector>
 	<COMPTE.h>
 	<TRANSACTION.h>
+	"EPARGNE.h"
+	"CHEQUE.h"
 
-1580086752 d:\cours l3gl\c++\projets\comptefichier\include\services.h
+1580743649 d:\cours l3gl\c++\projets\comptefichier\include\services.h
 	<COMPTE.h>
 	<TRANSACTION.h>
 	<vector>
 
-1580087705 source:d:\cours l3gl\c++\projets\comptefichier\src\services.cpp
+1580742496 source:d:\cours l3gl\c++\projets\comptefichier\src\services.cpp
 	"SERVICES.h"
 	<COMPTE.h>
 	<EPARGNE.h>
